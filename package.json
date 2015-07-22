@@ -1,0 +1,16 @@
+{
+  "name": "printCloud",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "3.2.6",
+    "mongoose": "3.8.14",
+    "underscore": "1.7.0",
+    "request": "2.42.0",
+    "moment": "2.8.4",
+    "semaphore":"1.0.1"
+  }
+}
