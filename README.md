@@ -15,6 +15,19 @@ cd scritps
 to start the app 
 node server.js 
 
+### Camera Model 
+
+{
+
+    "cameraId" : "001-002-003-0005",  // Unique Camera ID 
+    "cameraName" : "print cam 2",  // Name of the camera 
+    "cameraURL" : "http://print-cam-2:8080/stream.html", // Video URL
+    "resourceName" : "plastic printer one", // Resource the camera is monitoring 
+    "resourceDesc" : [   // List of properties of the resource being monitored 
+        "arduino based", 
+        "print speed 12000"
+    ]
+}
 
 
 ## Get Camera 
