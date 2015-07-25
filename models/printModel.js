@@ -13,11 +13,11 @@ var printModel = function() {
      */
 
     var Camera = new Schema({
-        cameraId : String, 
-        cameraName : String, 
-        cameraURL : String, 
-        resourceName : String, 
-        resourceDesc : [String]
+        cameraId: String,
+        cameraName: String,
+        cameraURL: String,
+        resourceName: String,
+        resourceDesc: [String]
     });
 
     this.Cameras = db.model('Cameras', Camera);

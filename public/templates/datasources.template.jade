@@ -1,0 +1,33 @@
+script#collection-template(type="text/template")
+  .row 
+    li.list-style OMDB Data source - GE 
+  .row
+    div.col-sm-4 
+      .row
+        label.mright
+          input(type='checkbox', value='age')
+          |  age
+      .row
+        label.mright
+          input(type='checkbox', value='bmi')
+          |  bmi
+      .row 
+        label.mright
+          input(type='checkbox', value='blood glucose')
+          |  blood glucose
+      .row
+        label.mright
+          input(type='checkbox', value='a1c')
+          |  a1c
+        div.col-sm-8
+          .row
+            div#age.col-sm-4
+            div#bmi.col-sm-4
+          .row
+            div#bg.col-sm-4
+            div#a1c.col-sm-4
+        .row 
+          div.break-down-2
+  .row
+    a.mright(href='/dashboard') dashboard?
+    a#stratifyLink.right(href='/stratify') Proceed to stratify?

@@ -11,6 +11,7 @@
     "underscore": "1.7.0",
     "request": "2.42.0",
     "moment": "2.8.4",
+    "jade": "*",
     "semaphore":"1.0.1"
   }
 }
