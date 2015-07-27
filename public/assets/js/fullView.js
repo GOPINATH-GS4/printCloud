@@ -86,7 +86,7 @@ $(function() {
 
 function refresh(img, data) {
     img.width = 640;
-    img.height = 360;
+    img.height = 480;
     console.log('refreshing');
     img.src = 'http://i2.cdn.turner.com/cnn/2013/images/07/10/3d.printing.jpg';
     // img.src  = data.cameraURL;
