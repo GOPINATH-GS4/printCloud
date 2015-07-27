@@ -588,10 +588,20 @@ menu {
   padding-left:2%;
   font-size:20px;
 }
+.choose-small {
+  font-size:.5em;
+  padding-left:2%;
+  color: blue;
+}
+.choose-red {
+  font-size:1.2em;
+  font-size:20px;
+  color: red;
+}
 .choose {
   font-size:1.2em;
-  padding-left:20%;
   font-size:20px;
+  color: blue;
 }
 
 .font-white {

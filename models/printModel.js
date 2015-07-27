@@ -16,6 +16,8 @@ var printModel = function() {
         cameraId: String,
         cameraName: String,
         cameraURL: String,
+        jobId: String,
+        owner: String,
         resourceName: String,
         resourceDesc: [String]
     });
