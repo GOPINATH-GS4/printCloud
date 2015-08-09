@@ -70,6 +70,8 @@ $(function() {
                     div.appendChild(img);
                     details.appendChild(div);
                     img.src = data[i].cameraURL;
+                    img.height = 180;
+                    img.width = 240;
                     /*
                     refresh(img, data, i);
 

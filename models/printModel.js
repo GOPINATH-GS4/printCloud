@@ -8,21 +8,48 @@ var printModel = function() {
     /**
      *
      * @type {mongoose.Schema}
-     * object to store valid corp email address domains e.g. koneksahealth.com, kh.com, khcorp.com
-     * schema cannot be instantiated outside
+     *
      */
 
     var Camera = new Schema({
-        cameraId: String,
-        cameraName: String,
+        cameraId: {
+            type: String,
+            index: {
+                unique: true
+            }
+        },
+        cameraName: {
+            type: String,
+            required: true
+        },
         cameraURL: String,
-        jobId: String,
-        owner: String,
-        resourceName: String,
-        resourceDesc: [String]
+        attr: [Attributes]
+    });
+
+    var Printer = new Schema({
+        printerId: {
+            type: String,
+            index: {
+                unique: true
+            }
+        },
+        printerName: {
+            type: String,
+            required: true
+        },
+        printerURL: String,
+        attr: [Attributes]
+
+    });
+
+    var Attributes = new Schema({
+        name: String,
+        value: String
     });
 
     this.Cameras = db.model('Cameras', Camera);
+    this.Printers = db.model('Printers', Printer);
+
     this.db = db;
 
 };

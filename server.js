@@ -30,7 +30,8 @@
 
     var db = new printModel();
 
-    var camera = require('./routes/camera.js')(app, db, u, fs, _);
+    var resource = require('./routes/resource.js')(app, db, u, fs, _);
+
     var camview = require('./routes/camview.js')(app, db, u, fs, _);
 
     http.createServer(app).listen(app.get('port'), function() {
